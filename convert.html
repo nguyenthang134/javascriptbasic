@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, tr, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Amount</td>
+            <td>From currency</td>
+            <td>To currentcy</td>
+        </tr>
+        <tr>
+            <td><input type="number" id="number"></td>
+            <td>USD</td>
+            <td>VietNam</td>
+        </tr>
+    </table>
+    <input type="button" value="Convert" onclick="convert(document.getElementById('number').value)">
+    <div id="converted"></div>
+    <script src="convert.js"></script>
+</body>
+</html>
